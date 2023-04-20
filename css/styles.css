@@ -181,6 +181,29 @@ body {
 /*-------------------- /COMPONENTS--------------- */
 
 /*------------------ HEADER--------------- */
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  .address-list {
+    display: none;
+  }
+}
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-open {
+  margin-left: auto;
+}
+
 /* .page-header {
   padding-top: 23.5px;
   padding-bottom: 23.5px;
