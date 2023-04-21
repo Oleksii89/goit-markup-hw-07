@@ -198,10 +198,10 @@ body {
 .page-header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .mobile-menu-open {
-  margin-left: auto;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -217,10 +217,14 @@ body {
   left: 0;
   background-color: var(--primary-white-color);
 }
+.mobile-menu__container {
+  position: relative;
+}
+
 .mobile-menu__close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 24px;
+  right: 24px;
   background-color: transparent;
   border: none;
   padding: 0;
