@@ -262,6 +262,77 @@ body {
     padding: 0;
     height: 24px;
   }
+  .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+    padding-bottom: 284px;
+  }
+  .mobile-menu-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+    transition: color var(--transition-dur-and-func);
+  }
+
+  .mobile-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .accent-mobile-menu-item {
+    color: var(--accent-color);
+  }
+
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    color: var(--accent-color);
+  }
+  .contact-us-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition: color var(--transition-dur-and-func);
+  }
+
+  .contact-us-link:hover,
+  .contact-us-link:focus {
+    color: var(--accent-color);
+  }
+  .tel-accent-mobile-menu-item {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--secondary-accent-color);
+  }
+  .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    padding-top: 48px;
+  }
+  .social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--secondary-accent-color);
+    transition: background-color var(--transition-dur-and-func);
+  }
+  .social-list-link:hover,
+  .social-list-link:focus {
+    background-color: var(--accent-color);
+  }
+
+  .social-list-icon {
+    fill: var(--background-color);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -463,7 +534,7 @@ body {
   text-align: center;
   margin-bottom: 8px;
 }
-.social-list {
+/* .social-list {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -485,7 +556,7 @@ body {
 
 .social-list-icon {
   fill: var(--background-color);
-}
+} */
 /*-------------------- /OUR TEAM--------------- */
 
 /*-------------------- CUSTOMERS--------------- */
