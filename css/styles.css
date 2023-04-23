@@ -454,6 +454,13 @@ body {
 
   color: var(--primary-white-color);
 }
+@media screen and (max-width: 767px) {
+.big-letter-mobile {
+  text-transform: uppercase;
+}
+}
+
+
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -467,9 +474,7 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .hero {
- 
-  
+  .hero {  
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -487,6 +492,7 @@ body {
 
     letter-spacing: 0.02em;
   }
+  
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
