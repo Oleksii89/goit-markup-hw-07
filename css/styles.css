@@ -99,28 +99,18 @@ body {
 /*-------------------- COMPONENTS--------------- */
 .subtitle {
   margin-bottom: 8px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
 .section-description {
+  font-weight: 400;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
-}
-
-@media screen and (min-width: 1158px) {
-  .subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  .section-description {
-    font-weight: 400;
-  }
 }
 
 .button-primary {
@@ -332,10 +322,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--secondary-accent-color);
   }
-  .social-list {
+  .social-list-mobile-menu {
     display: flex;
-    justify-content: center;
-    gap: 64px;
+    justify-content: space-between;
     padding-top: 48px;
   }
   .social-list-link {
@@ -578,6 +567,18 @@ body {
     flex-basis: calc((100% - 24px) / 2);
   }
 }
+@media screen and (max-width: 1157px) {
+  .feature-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+  .feature-desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
 
 @media screen and (min-width: 1158px) {
   .feature-content {
@@ -599,6 +600,11 @@ body {
 
 /*-------------------- WHAT ARE WE DOING--------------- */
 
+@media screen and (max-width: 1157px) {
+  .work {
+    display: none;
+  }
+}
 .work {
   padding-top: 0;
 }
@@ -652,7 +658,7 @@ body {
   text-align: center;
   margin-bottom: 8px;
 }
-/* .social-list {
+.social-list {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -674,7 +680,7 @@ body {
 
 .social-list-icon {
   fill: var(--background-color);
-} */
+}
 /*-------------------- /OUR TEAM--------------- */
 
 /*-------------------- CUSTOMERS--------------- */
