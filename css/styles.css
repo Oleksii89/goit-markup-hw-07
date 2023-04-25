@@ -973,6 +973,24 @@ body {
     flex-wrap: wrap;
   }
   .logo-text {
+    align-items: flex-start;
+    margin-right: 24px;
+  }
+  .social-media-footer {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .footer-subscribe {
+    align-items: flex-start;
+  }
+  .footer-subscribe-wrapper {
+    flex-direction: row;
+    width: 453px;
+  }
+  .footer-form-input {
+    margin-bottom: 0;
+    margin-right: 24px;
+    width: 264px;
   }
 }
 
@@ -981,6 +999,19 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  .logo-text {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .social-media-footer {
+    margin-right: 80px;
+  }
+}
+
+.footer-form-input::placeholder {
+  opacity: 1;
 }
 
 /* 
