@@ -281,6 +281,18 @@ body {
   .icon-close {
     fill: var(--secondary-text-color);
   }
+  .mobile-menu__close-btn:hover,
+  .mobile-menu__close-btn:focus {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+  }
+  .mobile-menu__close-btn {
+    transition: fill var(--transition-dur-and-func);
+  }
+  .mobile-menu__close-btn:hover .modal-close-btn-icon,
+  .mobile-menu__close-btnn:focus .modal-close-btn-icon {
+    fill: var(--primary-white-color);
+  }
 
   .mobile-menu-list {
     display: flex;
