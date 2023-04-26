@@ -261,6 +261,9 @@ body {
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .mobile-menu__close-btn {
@@ -298,7 +301,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 56px;
-    padding-bottom: 284px;
+    margin-bottom: auto;
   }
   .mobile-menu-link {
     font-size: 36px;
@@ -470,13 +473,14 @@ body {
   background-color: var(--background-color-hero);
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1440px;
+  max-width: 428px;
   height: 432px;
-  margin: auto;
+  margin: 0 auto;
 }
 .hero-title {
   margin: 0 auto 72px;
   max-width: 320px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -509,6 +513,7 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/bg-tablet.jpg);
+    max-width: 1158px;
     height: 436px;
   }
   .hero-title {
@@ -534,6 +539,7 @@ body {
 }
 @media screen and (min-width: 1158px) {
   .hero {
+    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
     background-image: linear-gradient(
@@ -567,7 +573,7 @@ body {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .feature-content {
+  .feature-content:not(:last-child) {
     margin: 0 auto 72px;
   }
   .feature {
@@ -733,6 +739,7 @@ body {
   flex-wrap: wrap;
   column-gap: 16px;
   row-gap: 72px;
+  justify-content: center;
 }
 
 .customer-link {
@@ -854,13 +861,6 @@ body {
   background-color: var(--secondary-text-color);
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 72px;
-}
-
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -876,6 +876,7 @@ body {
 
   color: var(--secondary-accent-color);
 }
+
 .footer-description {
   width: 264px;
   line-height: 1.5;
@@ -888,13 +889,6 @@ body {
   color: var(--background-color);
 }
 
-.social-media-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 72px;
-}
-
 .social-media-title {
   margin-bottom: 16px;
   font-weight: 500;
@@ -902,10 +896,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
 }
-.footer-content {
-  display: flex;
-  flex-direction: column;
-}
+
 .social-list-footer {
   display: flex;
   gap: 16px;
@@ -915,11 +906,6 @@ body {
 .footer-accent:focus {
   background-color: var(--accent-green-color);
 }
-.footer-subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .footer-subscribe-description {
   margin-bottom: 16px;
@@ -927,19 +913,16 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
+  text-align: center;
 }
-.footer-subscribe-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .footer-form-input {
   font-size: 16px;
 
   padding-left: 16px;
   margin-bottom: 16px;
   align-items: center;
-  width: 398px;
+  width: 100%;
   height: 40px;
   border: 1px solid var(--primary-white-color);
   border-radius: 4px;
@@ -974,6 +957,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
   letter-spacing: 0.04em;
 
   color: var(--primary-white-color);
@@ -988,31 +972,32 @@ body {
 .footer-subscreibe-btn-icon {
   fill: var(--primary-white-color);
 }
+@media screen and (max-width: 767px) {
+}
 
 @media screen and (min-width: 768px) {
   .footer-content {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
-  }
-  .logo-text {
-    align-items: flex-start;
-    margin-right: 24px;
+    gap: 72px 24px;
+    max-width: 550px;
   }
   .social-media-footer {
     align-items: flex-start;
     margin-bottom: 0;
   }
-  .footer-subscribe {
-    align-items: flex-start;
-  }
+
   .footer-subscribe-wrapper {
+    display: flex;
     flex-direction: row;
-    width: 453px;
+    gap: 24px;
   }
   .footer-form-input {
     margin-bottom: 0;
-    margin-right: 24px;
     width: 264px;
+  }
+  .footer-subscribe-description {
+    text-align: start;
   }
 }
 
@@ -1020,6 +1005,11 @@ body {
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .footer-content {
+    flex-wrap: nowrap;
+    max-width: 1158px;
+    gap: 0px;
   }
 
   .logo-text {
@@ -1076,6 +1066,15 @@ body {
   padding-bottom: 24px;
   padding-left: 24px;
   padding-right: 24px;
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 95%;
+    max-width: 392px;
+    height: 95%;
+    max-height: 586px;
+    overflow: scroll;
+  }
 }
 .modal-close-btn {
   position: absolute;
